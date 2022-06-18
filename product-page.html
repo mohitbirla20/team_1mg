@@ -7,7 +7,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitamins and Supplements</title>
 </head>
+
 <link rel="stylesheet" href="prdouct-page.css">
+<style>
+    #midnav>div>a{
+        text-decoration: none;
+        color: black;
+    }
+    #midnav>div>a:hover{
+        color:#FF6F61;
+    }
+    #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+#midnav>div>a{
+    text-decoration: none;
+     color: black;
+  }
+  #midnav>div>a:hover{
+    color: #ff6f61;
+  }
+#midnav{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 50%;
+    height: 60px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#midnav>div{
+    cursor: pointer;
+}
+#midnav>div:hover{
+    color: #FF6F61;
+}
+#rightnav{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 20%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#rightnav>div{
+    cursor: pointer;
+    margin-right: -18%;
+}
+#rightnav>div:hover{
+    color: #FF6F61;
+}
+#rightnav>div>img{
+    width: 60%;
+}
+#leftnav>div>img{
+    width: 100%;
+padding-left: 20px;
+}
+#size{
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+#rightnav>div>a{
+    text-decoration: none;
+    color: black;
+  }
+  #rightnav>div>a:hover{
+    color: #FF6F61;
+  }
+
+
+</style>
 
 <body>
 
@@ -16,22 +95,24 @@
             <div><img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt=""></div>
         </div>
         <div id="midnav">
-            <div><a href="/labtest.html"></a>MEDICINES</div>
-            <div>LAB TESTS</div>
-            <div><a href="consultdoctor.html">CONSULT DOCTORS</a></div>
-            <div>COVID-19</div>
+            <div><a href="index.html">MEDICINES</a></div>
+            <div><a href="labtest.html">Lab Tests</a></div>
+            <div><a href="consultdoctor.html">Consult Doctors</a></div>
+            <div><a href="covid19.html">COVID-19</a></div>
             <div><a href="ayurveda.html">AYURVEDA</a></div>
-            <div>CARE PLAN <p>save more</p>
+            <div><a href="careplain.html">CARE PLAN</a>
             </div>
         </div>
         <div id="rightnav">
-            <div>Login</div>
-            <div>| Sign Up</div>
-            <div><a href="cart-page.html"><img src="https://www.1mg.com/images/header/cart-icon-rebrand.svg"></a></div>
+            <div id="login"><a href="login.html">Login</a></div>
+            <div id="signup"><a href="signUp.html">Sign Up</a></div>
+            <div id="size"><a href="cart-page.html"><img src="https://www.1mg.com/images/header/cart-icon-rebrand.svg" alt=""></a></div>
             <div>Need Help?</div>
         </div>
     </div>
     <hr>
+    
+          
 
     <div id="sorting">
         <span>Sort By</span>
@@ -51,6 +132,6 @@
 </body>
 
 <script src="product-page.js"></script>
-
+<script src="navbar.js"></script>
 </html>
 

@@ -6,6 +6,7 @@ function loginFun(){
     dataFrmLs.forEach(function(elem){
         if(email==elem.uEmail && pass==elem.uPassword){
             alert("login successfull");
+            window.location.href="index.html";
             data.push(elem);
             localStorage.setItem("loginData",JSON.stringify(data));
         }else{

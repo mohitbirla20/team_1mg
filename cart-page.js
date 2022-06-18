@@ -3,6 +3,7 @@ let cartArr = JSON.parse(localStorage.getItem("Pcart")) || []
 if (cartArr.length == 0) {
     document.querySelector("body").innerHTML = "<p>Oops!<br>Looks like there is no item in your cart yet.</p > "
     alert("Your Cart Is Empty")
+    window.location.href="product-page.html"
 } else {
 
     let Pquantity = cartArr.length

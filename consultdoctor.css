@@ -335,7 +335,14 @@ video {
     margin-top: 30px;
     margin-bottom: 20px;
 }
-
+#midnav>div>a{
+  text-decoration: none;
+  color: black;
+}
+#midnav>div>a:hover{
+    
+    color:#FF6F61 ;
+  }
 #upperfooter>div>button {
     background-color: #FF6F61;
     color: white;
