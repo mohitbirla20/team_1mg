@@ -20,6 +20,14 @@
     justify-content: center;
     text-align: center;
 }
+#midnav>div>a{
+  text-decoration: none;
+  color: black;
+}
+#midnav>div>a:hover{
+    
+    color:#FF6F61 ;
+  }
 #midnav>div{
     cursor: pointer;
 }
