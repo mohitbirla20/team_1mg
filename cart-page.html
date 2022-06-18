@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | 1mg</title>
+</head>
+<link rel="stylesheet" href="cart-page.css">
+
+<body>
+
+    <div id="navbar">
+        <div id="leftnav">
+            <div><img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt=""></div>
+        </div>
+        <div id="midnav">
+            <div><a href="/labtest.html"></a>MEDICINES</div>
+            <div>LAB TESTS</div>
+            <div><a href="consultdoctor.html">CONSULT DOCTORS</a></div>
+            <div>COVID-19</div>
+            <div><a href="ayurveda.html">AYURVEDA</a></div>
+            <div>CARE PLAN <p>save more</p>
+            </div>
+        </div>
+        <div id="rightnav">
+            <div>Login</div>
+            <div>| Sign Up</div>
+            <div><a href="cart-page.html"><img src="https://www.1mg.com/images/header/cart-icon-rebrand.svg"></a></div>
+            <div>Need Help?</div>
+        </div>
+    </div>
+    <hr>
+
+    <h1>Cart</h1>
+    <p>Order Summary</p>
+
+    <p>Your Items</p>
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart product here -->
+            </tbody>
+        </table>
+
+        <div id="paySummary">
+
+            <div>
+                <input type="text" id="promo" placeholder="Enter discount promocode">
+                <button id="disc" onClick="checkDiscount()">Apply Promocode</button>
+            </div>
+
+
+            <!-- payment summary here -->
+            <h1>Payment Summary</h1>
+            <div>
+                <span>No. of Items:</span>
+                <span id="quantity"></span>
+            </div>
+            <div>
+                <span>Order Subtotal:</span>
+                <span id="subtotal"></span>
+            </div>
+            <div>
+                <span>Discount:</span>
+                <span id="discount"></span>
+            </div>
+
+            <div>
+                <span>Shipping:</span>
+                <span>Free Shipping</span>
+            </div>
+            <hr>
+            <div>
+                <span>Order Total:</span>
+                <span id="total"></span>
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<script src="cart-page.js"></script>
