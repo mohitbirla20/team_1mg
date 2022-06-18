@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar style */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+#midnav{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#midnav>div{
+    cursor: pointer;
+}
+#midnav>div:hover{
+    color: #FF6F61;
+}
+#rightnav{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 20%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#rightnav>div{
+    cursor: pointer;
+    margin-right: -18%;
+}
+#rightnav>div:hover{
+    color: #FF6F61;
+}
+#rightnav>div>img{
+    width: 60%;
+}
+#leftnav>div>img{
+    width: 100%;
+padding-left: 20px;
+}
+
+
+/* lower navbar */
+#lowernav{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 5px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+#first>select{
+    background-color: #F1F4F6;
+    padding: 10PX;
+    border: 0px;
+    /* margin-left: 1%; */
+   width: 22%;
+   font-weight: bold;
+}
+#first>input{
+    width: 72%;
+    border: 0px;
+    margin-left: 1%;
+    background-color: #F1F4F6;
+    padding: 10px;
+}
+
+
+#first{
+    display: flex;
+    width: 60%;
+}
+#second{
+    width: 35%;
+}
+#second>span{
+    background-color: #FF6F61;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#second>select{
+    font-size: 22px;
+    background-color: #F1F4F6;
+    padding: 7PX;
+    border: 0px;
+    width: 49%;
+}
+
+#lowestnav{
+    width: 100%;
+}
+#lowestnav>select{
+    border: 0px;
+    padding: 5px;
+    cursor: pointer;
+}
+#lowestnav>select:hover{
+    color: #FF6F61;
+    content-visibility: calc();
+}
+  #main{
+    width:100%;
+    height: 300px;
+    background-color: #fdf2e3;
+  }
+  #main>div{
+    width: 80%;
+    /* border: 2px solid red; */
+    height: 98%;
+    margin: auto;
+    display: flex;
+  }
+  #main>div>div{
+
+    /* border: 2px solid green; */
+    height: 100%;
+    width:50%;
+    margin: auto;
+    
+  }
+  
+  #image>img{
+    width:80%
+  }
+  #main>div>div>button{
+    /* border: none; */
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+  }
+  #main2{
+    width: 80%;
+    /* border: 2px solid blue; */
+    height: 700px;
+    margin: auto;
+    margin-top: 40px;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,200px);
+  }
+  #main2>h1{
+    /* border: 1px solid red; */
+    margin: auto;
+    text-align: center;
+  }
+  #main2>div{
+    /* border: 2px solid black; */
+    height: 220px;
+    width: 100%;
+    display: flex;
+  }
+  /* #main2>div>h2{
+    width: 100%;
+    border: 2px solid red;
+  } */
+  #main2>div>div{
+   display: flex;
+   flex-direction: column;
+  }
+  #main2>div>div>h2{
+    /* border: 2px solid green; */
+    font-size: 20px;
+  }
+  #main2>div>div>p{
+    /* border: 2px solid red; */
+    font-size: 20px;
+  }
+  #main2>div>img{
+    width: 30%;
+    height: 30%;
+  }
+  h1{
+    text-align: center;
+  }
+  #main3{width:80%;
+    margin: auto;
+height: 300px;
+/* border: 2px solid;gap:20px */
+;display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: auto;
+}
+
+#main3 div{
+    /* border:2px solid rgb(201, 203, 201); */
+    width:80%;
+    height: 100%;
+    
+}
+#main4{
+    /* border: 1px solid skyblue; */
+    width: 80%;
+    height: 500px;
+    background-color: #fefaf1;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: repeat(2,2fr);
+}
+#main4>div{
+    /* border: 2px solid red; */
+    width: 380px;
+    height: 250px;
+    margin: auto;
+    padding: 5px;
+}
+#main4>div>div>h2{
+   color: blue;
+   font-size: 25px;
+   
+}
+/* #main4>div>div>p{
+    color: rgb(65, 65, 208);
+    font-size: 20px;
+} */
+.new{
+    border-radius: 5px;
+    background-color: #ff6f61;
+    color: white;
+    padding: 5px;
+    /* border: 1px solid yellow; */
+
+}
+.child1{
+    /* font-size: 45px; */
+    /* border: 1px solid yellow; */
+}
+.child1_h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    /* border: 1px solid yellow; */
+}
+#p165{
+  font-size: 50px;
+  margin: 0;
+  /* border: 1px solid yellow; */
+}
+#right{
+    font-size: 30px;
+}
+.a275{
+    margin-top: 10px;
+}
+  .membership>p{
+    color: #131e5e;
+  }
+.check2{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+.join{
+    border-radius: 25px;
+    font-size: 15;
+    background-color: red;
+    width: 50%;
+    margin-top: 25px;
+  color: white;
+  padding: 8px;
+
+ align-items: flex-end;
+}
+.buyplan{
+    /* border: 1px solid orangered; */
+    width: 200%;
+    text-align: center;
+    margin-top: 40px;
+  
+}
+.p2815{
+    /* border: 1px solid green; */
+    height: auto;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+#cont{
+  /* border: 2px solid; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 150px;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+#cont>div{
+  /* border: 2px solid; */
+}
+.last{
+  /* border: 1px solid green; */
+  margin-top: 60px;
+ text-align: center;
+ font-size: 28px;
+ font-weight: bold;
+  
+}
+.R1825{
+  /* border: 1px solid green; */
+  margin-top: 20px;
+ text-align: center;
+ font-size: 45px;
+ font-weight: bold;
+ background-color: RGB(226, 246, 231);
+}
+.paralast{
+  /* border: 1px solid green; */
+  margin-top: 10px;
+ text-align: center;
+}
+/* .rightclick{
+  color: orange;
+ font-size: 20px;
+} */
+.check{
+  color: white;
+  font-size: 40;
+  background-color: RGB(255, 111, 97);
+}
+.lastchild{
+  /* border: 1px solid green; */
+  width: 80%;
+  height: 400px;
+  margin: auto;
+ margin-top: 30px;
+ background-color: RGB(238, 239, 251);
+}
+.lasthead{
+  text-align: center;
+  /* font-size: 30px; */
+  font-weight: bold;
+}
+.lastpara{
+  text-align: center;
+  width: 35%;
+  margin: auto;
+  font-size: 20px;
+}
+.S{
+  /* border: 2px solid black; */
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+ margin-top: 10px;
+  width: 80%;
+  margin: auto;
+}
+#upperfooter{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    height: 300px;
+    gap: 30px;
+}
+
+#footer{
+   /* height: 700px; */
+   background-color: #FFFCF8;
+}
+#upperfooter>div{
+    padding: 20px 30px 20px 40px;
+    width: 70%;
+}
+#upperfooter>div>p{
+    margin-top: 8px;
+    color: gray;
+    cursor: pointer;
+}
+#upperfooter>div>h3{
+margin-top: 30px;
+margin-bottom: 20px;
+}
+#upperfooter>div>button{
+    background-color: #FF6F61;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 20px 10px 20px;
+        cursor: pointer;
+        border: 0px;
+        margin-top: 20px;
+        border-radius: 8px;
+}
+#upperfooter>div>img{
+   width: 100%;
+   margin-top: 10px;
+}
+#sociallogo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+#sociallogo>img{
+    width: 150%;
+    margin-top: 10px;
+}
+
+#midfooter{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+#midfooter>div{
+    display: flex;
+}
+#bottomimg{
+   text-align: center;
+   margin-top: 20px;
+}
+
+#bottomfooter{
+    text-align: center;
+}
+#bottomfooter>p{
+    margin-top: 20px;
+}
+#lastfooter{
+    margin-top: 20px;
+    width: 60%;
+    margin: auto;
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+   </style>
+  
+</head>
+<body>
+  <div id="navbar">
+    <div id="leftnav">
+        <div><img src="https://www.1mg.com/images/tata_1mg_logo.svg" alt=""></div>
+    </div>
+    <div id="midnav">
+        <div><a href="/labtest.html"></a>MEDICINES</div>
+        <div>LAB TESTS</div>
+        <div>CONSULT DOCTERS</div>
+        <div>COVID-19</div>
+        <div>AYRVEDA</div>
+        <div>CARE PLAN <p>save more</p>
+        </div>
+    </div>
+    <div id="rightnav">
+        <div>Login</div>
+        <div>| Sign Up</div>
+        <div><img src="https://www.1mg.com/images/header/cart-icon-rebrand.svg" alt=""></div>
+        <div>Need Help?</div>
+    </div>
+</div>
+<hr>
+<div id="lowernav">
+    <div id="first">
+        <select id="location">
+            <option value="New Delhi">New Delhi</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Bangalore">Gurgoan</option>
+            <option value="Bangalore">mumbai</option>
+            <option value="Bangalore">Noida</option>
+            <option value="Bangalore">Hydrabad</option>
+            <option value="Bangalore">Ghaziabad</option>
+            <option value="Bangalore">Chennai</option>
+            <option value="Bangalore">Pune</option>
+            <option value="Bangalore">Faridabad</option>
+            <option value="Bangalore">Indore</option>
+            <option value="Bangalore">Jaipur</option>
+            <option value="Bangalore">patna</option>
+            <option value="Bangalore">Agra</option>
+            <option value="Bangalore">Ahmdabad</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Bangalore">Bhopal</option>
+            <option value="Bangalore">Bhubaneshwar</option>
+            <option value="Bangalore">Chandigad</option>
+            <option value="Bangalore">Chennai</option>
+            <option value="Bangalore">Coimbatore</option>
+            <option value="Bangalore">Dehradun</option>
+            <option value="Bangalore">Faridabad</option>
+            <option value="Bangalore">Ghaziabad</option>
+            <option value="Bangalore">Greater Noida</option>
+            <option value="Bangalore">Gurgoan</option>
+            <option value="Bangalore">Howrah</option>
+            <option value="Bangalore">Hydrabad</option>
+            <option value="Bangalore">Mohali</option>
+            <option value="Bangalore">Nagpur</option>
+            <option value="Bangalore">Nashik</option>
+            <option value="Bangalore">Navi Mumbai</option>
+            <option value="Bangalore">New Delhi</option>
+            <option value="Bangalore">Panchkula</option>
+            <option value="Bangalore">patna</option>
+            <option value="Bangalore">Rachi</option>
+            <option value="Bangalore">Surat</option>
+            <option value="Bangalore">Thane</option>
+            <option value="Bangalore">Vadodara</option>
+            <option value="Bangalore">Varanashi</option>
+        </select>
+        <input type="text" placeholder="search for Medicines and health Product">
+    </div>
+
+      <div id="second">
+        QUICK BUY! Get 25% off on medicines*
+        <span>Quick order</span>
+    </div>
+</div>
+<hr style="margin-top:5px;">
+
+<div id="lowestnav">
+  <select id="">
+    <option value="">Health Resource Center</option>
+    <option value="">All Deseases</option>
+    <option value="">All Medicines</option>
+    <option value="">Medicines by Theraputic class</option>
+  </select>
+  <select name="" id="">
+    <option value="">Covid-19 Self test kits
+    </option>
+    <option value="">Oxygen Cans & Concentartors</option>
+    <option value="">Mask</option>
+    <option value="">Sanitizer & Handwash Product</option>
+    <option value="">Support Your Immunity
+    </option>
+    <option value="Thermomete">Tharmometer</option>
+    <option value="">Chyawanprash</option>
+  </select>
+  <select>
+    <option value="">Tata 1mg Health Products</option>
+    <option value="">Summer Essntial</option>
+    <option value="">Trending now</option>
+    <option value="">New Arrivals on Tata 1mg</option>
+    <option value="">Buy More Save More</option>
+    <option value="">Minimum 33% off</option>
+    <option value="">Popular Combo Deals</option>
+  </select>
+  <select name="" id="">
+    <option value="">Vitamins & Nutrition</option>
+    <option value="">Multivitamins</option>
+    <option value="">Vitamins A-Z</option>
+    <option value="">Mineral Suplements</option>
+    <option value="">Vitamin B12 & B Complex</option>
+  </select>
+  <select>
+    <option value="">Diabetes</option>
+    <option value="">Blood Glucose</option>
+    <option value="">Test Strips</option>
+    <option value="">Syringes & Pens</option>
+    <option value="">Homeopathy</option>
+  </select>
+  <select>
+    <option value="">Healthcare Devices</option>
+    <option value="">Neck & Shoulder Support</option>
+    <option value="">Knee & legs Support</option>
+    <option value="">Ankle & Foot Support</option>
+    <option value="">Hand & Wrist Braces</option>
+    <option value="">Arm % Elbow Support</option>
+    <option value="">Cervical Pillows</option>
+    <option value="">Comperisson Support & sleeves</option>
+    <option value="">Heel Support</option>
+  </select>
+  <select>
+    <option value="">Personal Care</option>
+    <option value="">Baby Care</option>
+    <option value="">Baby Diapers</option>
+    <option value="">Nursing & Feeding</option>
+    <option value="">Baby Bath Essential</option>
+    <option value="">Baby Skin care</option>
+    <option value="">Baby Healthcare</option>
+  </select>
+  <select name="" id="">
+ 
+        <option value="">Health Condtion</option>
+        <option value="">Stomach Care</option>
+        <option value="">Bone joint & Muscle Care</option>
+        <option value="">Pain Relief</option>
+        <option value="">Heating Aids</option>
+        <option value="">Eye Care</option>
+        <option value="">Eye Lubericants</option>
+        <option value="">Eye Care</option>
+    </option>
+  </select>
+</div>
+<hr>
+     <div id="main"> 
+        <div>
+            <div>
+               <img src="https://onemg.gumlet.io/image/upload/v1625657833/ekjkxafxcqqg0oinr3fu.png" alt="">
+                    <h1>Reduce your medical expenses by HALF</h1>
+                    <p>Save for things that make you happy</p>
+                    <button>Explore Plans</button>
+                    <p>Plans starting Rs 46/month</p>
+                
+            </div>
+            <div id="image">
+                <img src="https://onemg.gumlet.io/image/upload/q_auto,f_auto/v1579675864/marketing/gek7gtlcjca85q0l3ees.jpg" alt="">
+            </div>
+        </div>
+     </div>
+     <h1>
+        Benefits
+    </h1>
+      <div id="main2">
+       <div>
+        
+            <img src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1617168621/marketing/zby23g1o4u5pdp4imzan.png" alt="">
+           <div>
+            <h2>Save extra 7% on every order</h2>
+            <p>Guaranteed savings over & above promotional offers.
+                Extra 2% off on all prescription medicines.
+                Earn additional 5% 1mgCash on all orders</p>
+           </div>
+       
+       </div>
+      <div>
+        <img src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1617168743/marketing/dmkbmj7zdcumqhvloswv.png" alt="">
+           <div>
+            <h2>Free Lab Test</h2>
+            <p>Get a free CBC or HbA1C test or upgrade to any one of our premium tests</p>
+           </div>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1617168794/marketing/xrrbnozjyplezqml6crx.png" alt="">
+        <div>
+         <h2>No Shipping Charges</h2>
+         <p>No shipping charges on orders above Rs.50. Unlimited Free shipping on orders above Rs.500. Free shipping on 20 orders below Rs.500</p>
+        </div>
+      </div>
+      <div>
+        <img src="	https://res.cloudinary.com/dusqx2w0c/image/upload/v1617168863/marketing/ll8w1jwk0yjkbcx1dpcw.png" alt="">
+        <div>
+         <h2>Free E-Consultation</h2>
+         <p>Get a free E-consultation from experts around 26 different specialities including dieticians and nutritionist</p>
+        </div>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1617086307/marketing/jee7thstqouh0m4xflgp.png" alt="">
+        <div>
+         <h2>Introducing Rapid Delivery</h2>
+         <p>Now get all your products delivered to you quicker than before. Same day and next day delivery in selected cities and expanding soon to all cities</p>
+        </div>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1617168913/marketing/viz4ybkh6wfq9sjbu4ze.png">
+        <div>
+         <h2>Early Sale Access</h2>
+         <p>Be among the first ones to shop during our sale days. Get even higher discounts and exclusive deals across all categories</p>
+        </div>
+      </div>
+      
+      </div>
+      <h1>
+        Additional Benefits
+    </h1>
+  <div id="main3">
+     <div>
+        <img src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1617169012/marketing/mqwi4hji0xmevi0leqxt.png" alt="">
+        <h2>
+            FREE Health Monitoring
+        </h2>
+        <p>
+            Digitally record&analyze your weight
+            and blood sugar readings overaperiod
+                              of time  
+        </p>
+     </div>
+     <div>
+        <img src="	https://res.cloudinary.com/dusqx2w0c/image/upload/v1617169094/marketing/rciejxt8uupxvkdoztx1.png" alt="">
+         <h2>Priority Processing
+        </h2>
+        <p>Care Plan members enjoy priority
+            processing of their orders.As our
+            premium members,your orders are
+            prioritise by pushing your prescriptions
+            to the front of the line for validation</p>
+    </div>
+     <div>
+        <img src="https://res.cloudinary.com/dusqx2w0c/image/upload/v1617169138/marketing/q2xl4gwlyw55awctv1lk.png" alt="">
+        <h2>Premium Customer
+            Support</h2>
+            <p>Members would be entitled to our
+                dedicated customer support experts.
+                We are committed to providing you with</p>
+     </div>
+</div>
+ <div id="main4">
+  <div>
+    <div>
+      <img src="https://onemg.gumlet.io/image/upload/v1625657833/ekjkxafxcqqg0oinr3fu.png" alt="">
+      <h2>More discounts,
+        faster delivery and
+        extra care</h2>
+        <p>Join now and enjoy all the benem
+        </p>
+    </div>
+  </div>
+  <div>
+  <h1>
+    Chooseaplan that's right for you 
+  </h1>
+  <div class="child1">
+    <h3 class="child1_h3"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/></svg></span>3 Month Plan <span class="new">NEW</span></h3>
+    <p id="p165">₹165
+    </p>
+    <p>₹55/Month
+    </p>
+  </div>
+</div>
+ <div class="membership">
+    <h1>
+        Membership includes
+    </h1>
+    <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </svg>1Free lab test
+    </p>
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </svg>1FreeE-consultation
+    </p>
+    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </svg> All other benefits mentioned above</p>
+ </div>
+ <div>
+    <h3><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+      </svg></span>
+    6 Month Plan <span class="new">NEW</span></h2>
+    <p id="p165">₹275
+    </p>
+    <p class="a275">₹46/Month
+    </p>
+    <button class="join">Join Now</button>
+</div>
+</div>
+
+<div class="last">How much will I save if I buy this plan?</div>
+<div class="R1825">₹1825</div>
+<div class="paralast">Saving 3 Month Plan</div>
+<div id="cont">
+
+  <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="check" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </svg> <span class="check2">I buy medicines
+    every month</span> <p>Assuming that you spend
+      1000 on medicines every
+      month</p></div>
+  <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="check" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </svg> <span class="check2">I get my labs tests done
+    regularly</span> <p>Assuming you go for a lab test worth 410
+      once in every 6 months</p></div>
+  <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="check" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </svg> <span class="check2">visit the Doctor
+    regularly</span> <p>Assuming a specialist doctor
+      consultation worth 7500 once
+      in every 3 months</p></div>
+</div>
+ <div class="lastchild">
+  <h1 class="lasthead">See what our member are saying</h1>
+  <p class="lastpara">"Mujhe es plan mein dawaiyon pe discounts ke saath
+    saath HbA1c test bhi milta hai, matlab mai bahar karata
+    hu HbA1c toh mera 250 rupaye lag jate hai aur ye poora
+    diabetes care plan mujhe 200 rupaye ka padta hai.
+    Sasta toh hai hi, dusra agar ek hi test kara lenge toh bhi
+    humara poora paisa vasool ho gaya. Esmein minimum
+    purchase ka bhi koi limit nahi hai, shipping charge nahi
+    lagega, aur aapko discount jo hai wo milega hi milega."</p>
+   <p class="S"> Sonu Shukla</p>
+ </div>
+ <body>
+  <div id="footer">
+      <div id="upperfooter">
+      <div>
+          <h3>Know Us</h3>
+          <p>About Us</p>
+          <p>Press Coverage</p>
+          <p>Careers</p>
+          <p>Business</p>
+          <p>Partnership</p>
+          <p>Become a Health partner</p>
+      </div>
+      <div><h3>Our Policies</h3>
+         <p>Privacy Policy</p>
+         <p>Terms and Condition</p>
+         <p>Editorail Policy</p>
+         <p>Return Policy</p>
+         <p>IP Policy</p>
+         <p>Grievance Redressal Policy</p>
+      </div>
+      <div>
+          <h3>Our Services</h3>
+          <p>Order Medicines</p>
+          <p>Book Lab Test</p>
+          <p>Consult a Docter</p>
+          <p>Ayureda Article</p>
+          <p>Hindi Article</p>
+          <p>Care Plan</p>
+      </div>
+      <div>
+          <h3>Connect</h3>
+          <p>Social Links</p>
+          <div id="sociallogo">
+          <img src="https://cdn-icons-png.flaticon.com/128/747/747374.png" alt="">
+          <img src="https://cdn-icons-png.flaticon.com/128/25/25347.png" alt="">
+          <img src="https://cdn-icons-png.flaticon.com/128/1384/1384028.png" alt="">
+          <img src="https://cdn-icons.flaticon.com/png/128/3536/premium/3536569.png?token=exp=1655217871~hmac=ae40271914959caebd3c5701e6bbe059" alt="">
+      </div>
+      <p>What daily dose of health</p>
+      <button>SIGN UP</button>
+      </div>
+      <div>
+          <h3>Download App</h3>
+          <img src="https://onemg.gumlet.io/search_widget/google-badge_3x.png?format=auto" alt="">
+          <img src="https://onemg.gumlet.io/search_widget/appstore-badge_3x.png?format=auto" alt="">
+      </div>
+      </div>
+      <hr>
+
+      <div id="midfooter">
+          <div><img src="	https://res.cloudinary.com/du8msdgbj/image/upload/v1571132631/secure-rebrand_x6f8yq.svg" alt="">
+              <div style="margin-left:10px;">
+              <h2>Reliable</h2>
+              <p>All products displayed on Tata 1mg are procured from verified and licensed pharmacies. All labs listed on the platform are accredited</p>
+              </div>
+          </div>
+          <div>
+              <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1571132500/reliable-rebrand_rcpof3.svg" alt="">
+              <div>
+                  <h2>Secure</h2>
+                  <p>Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and is Payment Card Industry Data Security Standard (PCI DSS) compliant</p>
+              </div>
+          </div>
+          <div>
+              <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1571131870/affordable-rebrand_ivgidq.svg" alt="">
+              <div>
+                  <h2>Affordable</h2>
+                  <p>Find affordable medicine substitutes, save up to 50% on health products, up to 80% off on lab tests and free doctor consultations</p>
+              </div>
+          </div>
+      </div>
+      <hr style="margin-top: 20px;">
+    <div id="bottomfooter">
+        <div id="bottomimg">
+          <img src="https://static.legitscript.com/seals/729605.png" alt="">
+          <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1580717209/URS_ebgmxc.png" alt="">
+        </div>
+        <p>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</p>
+    </div>
+    <hr style="margin-top: 20px;">
+    <h2 style="margin: 20px 0px 0px 30px;">Know more about Tata 1mg</h2>
+    <hr style="margin-top: 20px;"> 
+    <p id="lastfooter">© 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming drugs.</p>
+  </div>
+</body>
+  
+</html>
