@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #upperfooter{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    height: 300px;
+    gap: 30px;
+}
+
+#footer{
+   /* height: 700px; */
+   background-color: #FFFCF8;
+}
+#upperfooter>div{
+    padding: 20px 30px 20px 40px;
+    width: 70%;
+}
+#upperfooter>div>p{
+    margin-top: 8px;
+    color: gray;
+    cursor: pointer;
+}
+#upperfooter>div>h3{
+margin-top: 30px;
+margin-bottom: 20px;
+}
+#upperfooter>div>button{
+    background-color: #FF6F61;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 20px 10px 20px;
+        cursor: pointer;
+        border: 0px;
+        margin-top: 20px;
+        border-radius: 8px;
+}
+#upperfooter>div>img{
+   width: 100%;
+   margin-top: 10px;
+}
+#sociallogo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+#sociallogo>img{
+    width: 150%;
+    margin-top: 10px;
+}
+
+#midfooter{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+#midfooter>div{
+    display: flex;
+}
+#bottomimg{
+   text-align: center;
+   margin-top: 20px;
+}
+
+#bottomfooter{
+    text-align: center;
+}
+#bottomfooter>p{
+    margin-top: 20px;
+}
+#lastfooter{
+    margin-top: 20px;
+    width: 60%;
+    margin: auto;
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+</style>
+<body>
+    <div id="footer">
+        <div id="upperfooter">
+        <div>
+            <h3>Know Us</h3>
+            <p>About Us</p>
+            <p>Press Coverage</p>
+            <p>Careers</p>
+            <p>Business</p>
+            <p>Partnership</p>
+            <p>Become a Health partner</p>
+        </div>
+        <div><h3>Our Policies</h3>
+           <p>Privacy Policy</p>
+           <p>Terms and Condition</p>
+           <p>Editorail Policy</p>
+           <p>Return Policy</p>
+           <p>IP Policy</p>
+           <p>Grievance Redressal Policy</p>
+        </div>
+        <div>
+            <h3>Our Services</h3>
+            <p>Order Medicines</p>
+            <p>Book Lab Test</p>
+            <p>Consult a Docter</p>
+            <p>Ayureda Article</p>
+            <p>Hindi Article</p>
+            <p>Care Plan</p>
+        </div>
+        <div>
+            <h3>Connect</h3>
+            <p>Social Links</p>
+            <div id="sociallogo">
+            <img src="https://cdn-icons-png.flaticon.com/128/747/747374.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/128/25/25347.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/128/1384/1384028.png" alt="">
+            <img src="https://cdn-icons.flaticon.com/png/128/3536/premium/3536569.png?token=exp=1655217871~hmac=ae40271914959caebd3c5701e6bbe059" alt="">
+        </div>
+        <p>What daily dose of health</p>
+        <button>SIGN UP</button>
+        </div>
+        <div>
+            <h3>Download App</h3>
+            <img src="https://onemg.gumlet.io/search_widget/google-badge_3x.png?format=auto" alt="">
+            <img src="https://onemg.gumlet.io/search_widget/appstore-badge_3x.png?format=auto" alt="">
+        </div>
+        </div>
+        <hr>
+
+        <div id="midfooter">
+            <div><img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1571132631/secure-rebrand_x6f8yq.svg" alt="">
+                <div style="margin-left:10px;">
+                <h2>Reliable</h2>
+                <p>All products displayed on Tata 1mg are procured from verified and licensed pharmacies. All labs listed on the platform are accredited</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1571132500/reliable-rebrand_rcpof3.svg" alt="">
+                <div>
+                    <h2>Secure</h2>
+                    <p>Tata 1mg uses Secure Sockets Layer (SSL) 128-bit encryption and is Payment Card Industry Data Security Standard (PCI DSS) compliant</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1571131870/affordable-rebrand_ivgidq.svg" alt="">
+                <div>
+                    <h2>Affordable</h2>
+                    <p>Find affordable medicine substitutes, save up to 50% on health products, up to 80% off on lab tests and free doctor consultations</p>
+                </div>
+            </div>
+        </div>
+        <hr style="margin-top: 20px;">
+      <div id="bottomfooter">
+          <div id="bottomimg">
+            <img src="https://static.legitscript.com/seals/729605.png" alt="">
+            <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1580717209/URS_ebgmxc.png" alt="">
+          </div>
+          <p>India's only LegitScript and ISO/ IEC 27001 certified online healthcare platform</p>
+      </div>
+      <hr style="margin-top: 20px;">
+      <h2 style="margin: 20px 0px 0px 30px;">Know more about Tata 1mg</h2>
+      <hr style="margin-top: 20px;"> 
+      <p id="lastfooter">© 2022 Tata 1mg. All rights reserved. In compliance with Drugs and Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't process requests for Schedule X and other habit forming drugs.</p>
+    </div>
+</body>
+</html>
