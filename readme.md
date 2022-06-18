@@ -6,7 +6,7 @@
 | --- | --- |
 | Mrityunjay Sarkar | Covid_19 page & Payment page |
 | Alok Kumar | Consult Doctor , login_Sign page & Product Page |
-| Sourabh Uable | Landing Page|
+| Saurabh Uable | Landing Page|
 | Mohit Birla | Navbar , Labtests & footer|
 | Sujeet Sharma | care plan Page |
 | Aayush Kumar | Footer | 
