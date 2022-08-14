@@ -2,14 +2,14 @@
 
 ### Team Member
 
-| Name | Contribution |
-| --- | --- |
-| Mrityunjay Sarkar | Covid_19 page & Payment page |
-| Alok Kumar | Consult Doctor , login_Sign page & Product Page |
-| Saurabh Ubale | Landing Page|
-| Mohit Birla | Navbar , Labtests & footer|
-| Sujeet Sharma | care plan Page |
-| Aayush Kumar | Footer | 
+| Name 
+| --- 
+| Mrityunjay Sarkar 
+| Alok Kumar 
+| Saurabh Ubale 
+| Mohit Birla 
+| Sujeet Sharma 
+ 
 
 ## About Project
 - We have created a medical website on which the user can make medical purchases. On the website we have created, the user can see the products of our website, but it is necessary to sign up for shopping. Without SignUp you Can't buy any product.There are 6 pages in our website. Diffirent Page have a diffirent kind of facility. 
