@@ -14,7 +14,7 @@
 ## About Project
 - We have created a medical website on which the user can make medical purchases. On the website we have created, the user can see the products of our website, but it is necessary to sign up for shopping. Without SignUp you Can't buy any product.There are 6 pages in our website. Diffirent Page have a diffirent kind of facility. 
 - You can easily buy any product on this project which we Created during unit_2 CONSTRUCT WEEK.
-- [You can visit Our Website](https://us06web.zoom.us/j/88291499950?pwd=RjZKbWxwOU1rNGoyeXdyV3JIUlBJQT09)
+- [You can visit Our Website](https://fabulous-sorbet-67ec69.netlify.app/)
 
 
 ## Tools
